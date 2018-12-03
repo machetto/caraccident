@@ -1,0 +1,62 @@
+digraph {
+fontsize=20; fontname=Calibri;bgcolor="white";
+#splines=ortho; nodesep=0;
+edge [penwidth=1, color=black, arrowsize=.5, fontname=Calibri]
+
+subgraph cluster_0 {
+
+label = "{N0}";
+
+node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
+
+{node [label="{N2}"] N2;}
+
+{node [label="{N5}"] N5; }
+
+{node [label="{N8}"] N8;}
+
+{node [label="{N9}"] "N9";}
+
+{node [label="{N12}"] "N12";}
+
+{node [label="{N13}"] "N13";}
+
+{node [label="{N14}"] "N14";}
+
+{node [label="{N4}"] "N4";}
+
+{node [label="{N7}"] "N7";}
+
+node [shape=ellipse];
+
+{node [label="{N1}"] N1; }
+
+{node [label="{N15}"] N15; }
+
+node [shape=diamond];
+
+{node [label="{N3}"] "N3";}
+
+{node [label="{N6}"] N6;}
+
+{node [label="{N11}"] N11;}
+
+}
+
+N1 -> N2;
+N2 -> N3;
+N3 -> N4 [xlabel="{YES}"];
+N4 -> N5;
+N3 -> N5 [xlabel="{NO}"];
+N5 -> N6;
+N6 -> N7 [xlabel="{NO}"];
+N7 -> N8;
+N6 -> N8 [xlabel="{YES}"];
+N8 -> N9;
+N9 -> N11;
+N11 -> N12 [xlabel="{NO}"];
+N12 -> N13;
+N13 -> N14;
+N14 -> N15;
+N11 -> N14 [xlabel="{YES}"];
+}

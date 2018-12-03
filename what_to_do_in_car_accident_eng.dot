@@ -1,0 +1,62 @@
+digraph {
+fontsize=20; fontname=Calibri;bgcolor="white";
+#splines=ortho; nodesep=0;
+edge [penwidth=1, color=black, arrowsize=.5, fontname=Calibri]
+
+subgraph cluster_0 {
+
+label = "\nWhat to do if you are in a car accident\n\n";
+
+node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
+
+{node [label="\nStop\nSwitch on hazard warning lights\nGive as much help as possible\nto anyone else involved in the crash\nDo not touch anyone\nunless urgent help is required\n\n"] N2;}
+
+{node [label="\nThe parties involved must provide each other with the following information:\n\n- Name, address and licence details\l- Vehicle registration number\l- If not the owner of the vehicle, the name and address of the owner\l\n"] N5; }
+
+{node [label="\nRecord date, time, place of the accident\nTake pictures of the scene\n\n"] N8;}
+
+{node [label="\nIf possible, also find out:\l\l- Witness names and contact details\l- The police names and contact details\l(if the police attended the scene)\l\n"] "N9";}
+
+{node [label="\nContact your insurance company to have the car towed\nCall your towing company if you have one\nIf you cannot arrange a tow\nand exhaust all other options,\ncall the Police Assistance Line on 131 444\n\n"] "N12";}
+
+{node [label="\l- Wait for the towing vehicle\l- Sign Towing Authorisation Form\l- Get a copy of the Towing Authorisation Form\l- Take personal items from th car\l- Make sure the car is towed away\l6. Within 24 hours call\nthe Police Assistance Line: 131 444\l\n"] "N13";}
+
+{node [label="\nGo home\nCall your insurance company\n\n"] "N14";}
+
+{node [label="\nCall the Police and Ambulance (000)\n\n"] "N4";}
+
+{node [label="\nCall the Police (000)\n\n"] "N7";}
+
+node [shape=ellipse];
+
+{node [label="Car accident"] N1; }
+
+{node [label="End"] N15; }
+
+node [shape=diamond];
+
+{node [label="Someone injured?\nLeft the scene?\nUnder influence?\nProperty damage?"] "N3";}
+
+{node [label="\nThe other party refuses to provide particulars to you?\n\n"] N6;}
+
+{node [label="Can you drive your car?"] N11;}
+
+}
+
+N1 -> N2;
+N2 -> N3;
+N3 -> N4 [xlabel="Yes"];
+N4 -> N5;
+N3 -> N5 [xlabel="No"];
+N5 -> N6;
+N6 -> N7 [xlabel="No"];
+N7 -> N8;
+N6 -> N8 [xlabel="Yes"];
+N8 -> N9;
+N9 -> N11;
+N11 -> N12 [xlabel="No"];
+N12 -> N13;
+N13 -> N14;
+N14 -> N15;
+N11 -> N14 [xlabel="Yes"];
+}
