@@ -25,7 +25,7 @@ node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
 
 {node [label="\nПозвонив полицию и/или\nскорую помощь (000)\n\n"] "N4";}
 
-{node [label="\nПозвонив полицию (000)\n\n"] "N7";}
+{node [label="\nПозвонить в полицию (000)\n\n"] "N7";}
 
 node [shape=ellipse];
 
@@ -49,9 +49,9 @@ N3 -> N4 [xlabel="Да"];
 N4 -> N5;
 N3 -> N5 [xlabel="Нет"];
 N5 -> N6;
-N6 -> N7 [xlabel="Да"];
+N6 -> N7 [xlabel="Нет"];
 N7 -> N8;
-N6 -> N8 [xlabel="Нет"];
+N6 -> N8 [xlabel="Да"];
 N8 -> N9;
 N9 -> N11;
 N11 -> N12 [xlabel="Нет"];
