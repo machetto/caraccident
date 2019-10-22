@@ -23,7 +23,7 @@ node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
 
 {node [label="\nМожно ехать домой\nПозвонить в свою страховую компанию\n\n"] "N14";}
 
-{node [label="\nПозвонив полицию и/или\nскорую помощь (000)\n\n"] "N4";}
+{node [label="\nПозвонить в полицию и/или\nскорую помощь (000)\n\n"] "N4";}
 
 {node [label="\nПозвонить в полицию (000)\n\n"] "N7";}
 
