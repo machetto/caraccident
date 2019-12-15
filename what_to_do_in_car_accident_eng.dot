@@ -11,7 +11,7 @@ node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
 
 {node [label="\nStop\nSwitch on hazard warning lights\nGive as much help as possible\nto anyone else involved in the crash\nDo not touch anyone\nunless urgent help is required\n\n"] N2;}
 
-{node [label="\nThe parties involved must provide each other with the following information:\n\n- Name, address and licence details\l- Vehicle registration number\l- If not the owner of the vehicle, the name and address of the owner\l\n"] N5; }
+{node [label="\nThe parties involved must provide each other with the following information:\n\n- Name, address and licence details\l- Vehicle registration number\l- If not the owner of the vehicle, the name and address of the owner\l\nIf possible, find out:\l- insurance company name,\l- phone number and driver license number of the driver and owner,\l- car's make\l\n"] N5; }
 
 {node [label="\nRecord date, time, place of the accident\nTake pictures of the scene\n\n"] N8;}
 
@@ -19,7 +19,7 @@ node [shape=box, fontname=Calibri, style=filled,fillcolor=lemonchiffon;];
 
 {node [label="\nContact your insurance company to have the car towed\nCall your towing company if you have one\nIf you cannot arrange a tow\nand exhaust all other options,\ncall the Police Assistance Line on 131 444\n\n"] "N12";}
 
-{node [label="\l- Wait for the towing vehicle\l- Sign Towing Authorisation Form\l- Get a copy of the Towing Authorisation Form\l- Take personal items from th car\l- Make sure the car is towed away\l6. Within 24 hours call\nthe Police Assistance Line: 131 444\l\n"] "N13";}
+{node [label="\l- Wait for the towing vehicle\l- Sign Towing Authorisation Form\l- Get a copy of the Towing Authorisation Form\l- Take personal items from th car\l- Make sure the car is towed away\l- Within 24 hours call the Police Assistance Line: 131 444\l\n"] "N13";}
 
 {node [label="\nGo home\nCall your insurance company\n\n"] "N14";}
 
@@ -37,7 +37,7 @@ node [shape=diamond];
 
 {node [label="Someone injured?\nLeft the scene?\nUnder influence?\nProperty damage?"] "N3";}
 
-{node [label="\nThe other party refuses to provide particulars to you?\n\n"] N6;}
+{node [label="\nHave the other party provided\ntheir particulars to you?\n\n"] N6;}
 
 {node [label="Can you drive your car?"] N11;}
 
